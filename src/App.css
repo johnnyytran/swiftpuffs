@@ -325,6 +325,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: none;
 }
 
+.subtitle {
+  color: white;
+  font-size: 2em; /* slightly larger */
+  font-weight: 700;
+  text-align: left;
+  margin-top: 0.5em;
+  text-shadow: 0 0 5px #aaa, 0 0 10px #888, 0 0 15px #666;
+}
+
 @keyframes fadeInLetter {
   from {
     opacity: 0;

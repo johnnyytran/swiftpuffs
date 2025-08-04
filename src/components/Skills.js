@@ -83,13 +83,6 @@ export const Skills = () => {
                     We handle all complaints via a QR code on the machine.
                   </h5>
                 </div>
-                <div className="item">
-                  <img src={meter7} alt="Trusted Nebraska locations" />
-                  <h5>
-                    Trusted by top Nebraska spots like The Brass Rail, The Bar,
-                    Grata, and more.
-                  </h5>
-                </div>
               </Carousel>
             </div>
           </div>

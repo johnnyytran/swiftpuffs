@@ -79,6 +79,9 @@ export const Banner = () => {
                         </span>
                       ))}
                     </div>
+
+                    <div className="subtitle">Vape Vending</div>
+
                     {showSmoke && (
                       <img
                         className="smoke-overlay"
@@ -90,6 +93,7 @@ export const Banner = () => {
 
                   <h1>
                     {`ATTENTION ALL IOWA `}
+                    <br />
                     <span className="txt-rotate">
                       <span className="wrap">{text}</span>
                     </span>
