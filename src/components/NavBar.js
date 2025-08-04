@@ -85,10 +85,10 @@ export const NavBar = () => {
 
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="mailto:example@example.com">
+                <a href="Swiftpuffsdsm@gmail.com">
                   <img src={emailIcon} alt="Email" />
                 </a>
-                <a href="tel:+1234567890">
+                <a href="tel:+151555126313">
                   <img src={phoneIcon} alt="Phone" />
                 </a>
               </div>

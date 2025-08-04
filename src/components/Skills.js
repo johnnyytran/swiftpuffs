@@ -44,30 +44,38 @@ export const Skills = () => {
                 <div className="item">
                   <img src={meter1} alt="Free vape machine installation" />
                   <h5>
-                    We provide, install, maintain and replenish the vape vending
-                    machine for FREE
+                    We install, maintain, and restock the vape vending machine
+                    in your business — 100% FREE.
                   </h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Latest vape products" />
                   <h5>
-                    We sell the latest vapes so your customers never need to
-                    leave to buy a vape.
+                    We offer the most popular vapes and tobacco products in the
+                    machines for your customers.
                   </h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Profit sharing" />
-                  <h5>We share the profits with you!</h5>
-                </div>
-                <div className="item">
-                  <img src={meter4} alt="Licensing handled" />
                   <h5>
-                    We take care of all licenses and legal responsibility.
+                    Boost bar revenue by fulfilling customer’s nicotine cravings
+                    which encourages them to stick around longer.
                   </h5>
                 </div>
                 <div className="item">
-                  <img src={meter5} alt="ID tech for age verification" />
-                  <h5>We use ID tech to prevent underage vape sales.</h5>
+                  <img src={meter5} alt="Licensing handled" />
+                  <h5>
+                    The machines come with a modern looking user-friendly
+                    touchscreen interface and are designed to operate quietly in
+                    the background.
+                  </h5>
+                </div>
+                <div className="item">
+                  <img src={meter4} alt="ID tech for age verification" />
+                  <h5>
+                    Worried about underage access? We offer advanced ID
+                    verification scanners on the machines.
+                  </h5>
                 </div>
                 <div className="item">
                   <img src={meter6} alt="QR code support" />

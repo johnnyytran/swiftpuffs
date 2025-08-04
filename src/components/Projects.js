@@ -23,7 +23,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Product Details</h2>
-                  <p>We have TWO models to pick from!</p>
+                  <p>We have TWO models to choose from!</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -31,10 +31,10 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Model 1</Nav.Link>
+                        <Nav.Link eventKey="first">SLIM TOWER</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Model 2</Nav.Link>
+                        <Nav.Link eventKey="second">SLIM WALL MOUNTED</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content

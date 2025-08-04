@@ -1,17 +1,19 @@
 import { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/logospin.gif";
+import smokeVideo from "../assets/video/smoke.gif";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-const toRotate = ["BARS", "PUBS", "CLUBS"]; // moved outside
+const toRotate = ["BARS", "PUBS", "CLUBS"];
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [showSmoke, setShowSmoke] = useState(true); // for smoke effect
   const period = 1000;
 
   const tick = useCallback(() => {
@@ -41,9 +43,17 @@ export const Banner = () => {
     const ticker = setInterval(() => {
       tick();
     }, delta);
-
     return () => clearInterval(ticker);
   }, [tick, delta]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSmoke(false); // hide smoke after 5s
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const brandText = "SWIFT PUFFS";
 
   return (
     <section className="banner" id="home">
@@ -57,24 +67,39 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to Swift Puffs</span>
+                  <div className="swift-puffs-wrapper">
+                    <div className="swift-puffs">
+                      {[...brandText].map((char, i) => (
+                        <span
+                          key={i}
+                          className={char === " " ? "tagline space" : "tagline"}
+                          style={{ animationDelay: `${1 + i * 0.3}s` }}
+                        >
+                          {char}
+                        </span>
+                      ))}
+                    </div>
+                    {showSmoke && (
+                      <img
+                        className="smoke-overlay"
+                        src={smokeVideo}
+                        alt="Smoke effect"
+                      />
+                    )}
+                  </div>
+
                   <h1>
-                    {`Calling all `}
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "BARS", "PUBS", "CLUBS" ]'
-                    >
+                    {`ATTENTION ALL IOWA `}
+                    <span className="txt-rotate">
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Does Your Business Have 3 Square Feet To Spare? That's All
-                    You Need To Start Getting PAID...
+                    Transform that unused corner in your business to generate
+                    MORE for you. Vape Vending Machines ARE the FUTURE!
                   </p>
                   <button onClick={() => console.log("connect")}>
-                    FREE! Actually it's better than free. We pay YOU!{" "}
-                    <ArrowRightCircle size={25} />
+                    How it works: <ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}

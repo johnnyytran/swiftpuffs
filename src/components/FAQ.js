@@ -13,39 +13,27 @@ export const FAQ = () => {
               What am I responsible for providing as the bar owner?
             </Accordion.Header>
             <Accordion.Body>
-              All you need is to provide an outlet and about 2-3 feet of wall or
-              floor space.
+              All we need from you is a power outlet and 2-3 feet of space.
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              Does it have to be wall mounted?
+              How much is the monthly electric bill?
             </Accordion.Header>
             <Accordion.Body>
-              No, we can put the machine on a pedestal that is roughly the same
-              size, just a few inches bigger on the floor.
+              These machines don’t consume a lot of electricity and work on
+              standard outlets. The estimated average cost is $1-$2 a month.
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="2">
-            <Accordion.Header>Do you only sell vapes?</Accordion.Header>
-            <Accordion.Body>
-              No, depending on the demographic of the location, we sell nicotine
-              pouches and legal weed products as well. We can have a
-              conversation if you think those products would be good for your
-              bar,
-            </Accordion.Body>
-          </Accordion.Item>
-
-          <Accordion.Item eventKey="3">
             <Accordion.Header>
-              How do I get my share of the profit?
+              Do your machines sell other products?
             </Accordion.Header>
             <Accordion.Body>
-              Whatever payment method works best for you! We pay out the first
-              of every month. Most of ourr locations take payment via Venmo, but
-              we are flexible with payment method.
+              Yes we can sell other tobacco and nicotine products at your
+              request.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

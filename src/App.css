@@ -251,7 +251,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
 }
 
-/* Add blurred and darkened background image */
 .banner::before {
   content: "";
   position: absolute;
@@ -263,75 +262,94 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(5px) brightness(0.4); /* blur + darken */
-  z-index: -1; /* push fully behind everything */
+  filter: blur(5px) brightness(0.4);
+  z-index: -1;
 }
 
-@keyframes ninjaEntrance {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px) scale(0.9);
-    filter: blur(4px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0);
-  }
+.swift-puffs {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-@keyframes ninjaEntrance {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px) scale(0.9);
-    filter: blur(6px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0);
-  }
-}
-
-.banner .tagline {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 900;
-  font-size: 48px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding: 22px 48px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.25); /* semi-transparent dark */
-  border: 2px solid rgba(255, 215, 0, 0.3);
-  border-radius: 18px;
-
-  /* Glass effect */
-  backdrop-filter: blur(15px) saturate(180%);
-  -webkit-backdrop-filter: blur(15px) saturate(180%);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
-
+.swift-puffs-wrapper {
+  position: relative;
   display: inline-block;
-  margin-bottom: 32px;
-  cursor: default;
-  user-select: none;
-
-  animation: ninjaEntrance 1s ease-out forwards;
-  opacity: 0;
-  transition: all 0.4s ease;
+  width: auto;
+  margin-bottom: 20px;
 }
 
-.banner .tagline:hover {
-  background: rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 215, 0, 0.6);
+.swift-puffs {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+}
+
+.smoke-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.tagline {
+  font-family: sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.05em;
+  color: #fff;
+  opacity: 0;
+  animation: fadeInLetter 0.8s ease forwards;
+
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffea00,
+    0 0 30px #ffea00, 0 0 40px #ffea00;
+}
+
+.tagline.space {
+  letter-spacing: normal; /* or positive */
+  margin: 0 0.1em; /* increase horizontal space */
+  opacity: 1; /* no fade for space */
+  animation: none;
+}
+
+@keyframes fadeInLetter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 .banner h1 {
-  font-size: 65px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: #fff;
+  z-index: 2;
+  position: relative;
 }
+
 .banner p {
   color: #ffffff;
   font-size: 18px;
@@ -342,13 +360,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: rgba(0, 0, 0, 0.35);
   padding: 10px 15px;
   border-radius: 8px;
-
-  /* Glassmorphism & glow */
   backdrop-filter: blur(6px);
   box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
   text-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
-
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .banner p:hover {
@@ -365,6 +382,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .banner button svg {
   font-size: 25px;
@@ -375,24 +394,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  max-width: 100%;
-  height: auto;
-}
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
+
 .txt-rotate > .wrap {
   color: #ffffff;
-  border-right: 0.08em solid #ffd700; /* gold border */
+  border-right: 0.08em solid #ffd700;
   text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffea00;
 }
 

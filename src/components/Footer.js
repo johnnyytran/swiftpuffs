@@ -13,10 +13,10 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="mailto:johnnyytran01@gmail.com">
+              <a href="mailto:Swiftpuffsdsm@gmail.com">
                 <img src={emailIcon} alt="Email" />
               </a>
-              <a href="tel:+5157719204">
+              <a href="tel:+15155126313">
                 <img src={phoneIcon} alt="Phone" />
               </a>
             </div>
