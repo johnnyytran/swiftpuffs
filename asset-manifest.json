@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/swiftpuffs/static/css/main.9ddb5815.css",
+    "main.css": "/swiftpuffs/static/css/main.214affac.css",
     "main.js": "/swiftpuffs/static/js/main.2b1acb06.js",
     "static/js/787.c5078130.chunk.js": "/swiftpuffs/static/js/787.c5078130.chunk.js",
     "static/media/smoke.gif": "/swiftpuffs/static/media/smoke.7f736d5467fedcf9ea01.gif",
@@ -27,12 +27,12 @@
     "static/media/meter7.png": "/swiftpuffs/static/media/meter7.f9a80b85d59e410f4f92.png",
     "static/media/revicons.woff": "/swiftpuffs/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/swiftpuffs/index.html",
-    "main.9ddb5815.css.map": "/swiftpuffs/static/css/main.9ddb5815.css.map",
+    "main.214affac.css.map": "/swiftpuffs/static/css/main.214affac.css.map",
     "main.2b1acb06.js.map": "/swiftpuffs/static/js/main.2b1acb06.js.map",
     "787.c5078130.chunk.js.map": "/swiftpuffs/static/js/787.c5078130.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ddb5815.css",
+    "static/css/main.214affac.css",
     "static/js/main.2b1acb06.js"
   ]
 }
