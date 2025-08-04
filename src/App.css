@@ -293,7 +293,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .smoke-overlay {
   position: absolute;
-  top: 50%;
+  top: 36%;
   left: 50%;
   width: 120%;
   height: 120%;
