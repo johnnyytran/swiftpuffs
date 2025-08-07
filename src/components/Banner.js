@@ -80,7 +80,7 @@ export const Banner = () => {
                       ))}
                     </div>
 
-                    <div className="subtitle">Vape Vending</div>
+                    <div className="subtitle">Vape Vending Machines</div>
 
                     {showSmoke && (
                       <img
@@ -99,8 +99,8 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Transform that unused corner in your business to generate
-                    MORE for you. Vape Vending Machines ARE the FUTURE!
+                    Transform Empty Space In Your Business Into More Profits…
+                    With Vape Vending Machines!
                   </p>
                   <button onClick={() => console.log("connect")}>
                     How it works: <ArrowRightCircle size={25} />

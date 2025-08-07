@@ -13,7 +13,8 @@ export const FAQ = () => {
               What am I responsible for providing as the bar owner?
             </Accordion.Header>
             <Accordion.Body>
-              All we need from you is a power outlet and 2-3 feet of space.
+              All we need from you is a working power outlet, a Wi-Fi
+              connection, and 2-3 feet of space.
             </Accordion.Body>
           </Accordion.Item>
 
